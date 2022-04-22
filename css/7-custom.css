@@ -1,0 +1,126 @@
+.bg-green {
+    background-image: url(../images/values-bg.jpg);
+    color:#fff;
+}
+.bg-footer {
+    background-color: var(--baseLight);
+}
+.value {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+.value h1 {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width:2.5em;
+    padding: .4em 0;
+    color: var(--baseLight);
+}
+.value h3 {
+    margin: 0 1em;
+    color: var(--baseLight);
+}
+.value p {
+    margin: 0 1em 3em 1em;
+}
+.landing {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+}
+.landing h1 {
+    line-height: 1;
+}
+.logo {
+    display: block;
+    padding-top:.5em;
+    font-size: 5em;
+    color: var(--baseColor)
+}
+.phone {
+    padding: 1em;
+    width: 90%;
+}
+.footer-top {
+    padding-top: 2em;
+}
+/* .register form */
+
+.register label {
+    display: inline;
+}
+.register div {
+    margin: .5em 0;
+}
+.register input[type="email"],
+.register input[type="search"],
+.register input[type="text"],
+.register input[type="tel"],
+.register input[type="url"],
+.register input[type="password"],
+.register textarea {
+    box-shadow: 3px 3px 5px #aaa inset;
+    width: 100%;
+}
+.register select, 
+.register input[type="number"]{
+    box-shadow: 3px 3px 5px #aaa inset;
+    height: 2.5em;
+    padding: 6px 10px;
+} 
+.register input[type="time"],
+.register input[type="date"]{
+    height: 2em;
+    padding: 6px 10px;
+} 
+.login {
+    border: 1px solid var(--baseColor);
+    border-radius: .5em;
+    padding:1em;
+    background-color: var(--baseLight);
+}
+.login input[type="text"],
+.login input[type="password"] {
+    box-shadow: 3px 3px 5px #aaa inset;
+    width: 100%;
+}
+.foot a{
+    color:rgb(0, 34, 15);
+    text-decoration: none;
+}
+.foot a:visited {
+    color:#444;
+}
+footer ul {
+    list-style-type: none;
+}
+@media screen and (min-width:37.5em){
+    .landing {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:48em){
+    .landing {
+        grid-template-columns: 2fr 1fr;
+    }
+    .landing h1 {
+        line-height: 1.2;
+    }
+    .value h1 {
+        font-size: 3em;
+    }
+    .logo {
+        font-size: 7em;
+        padding:0;
+    }
+    .phone {
+        transform: rotate(6deg);
+        padding: 0;
+        margin-top: -1em;
+    }
+    .bg-green {
+        margin-top: -1em;
+    }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS grind">
+    <meta name="author" content="GJG">
+    <title>CSS grind</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/1-base.css">
+    <link rel="stylesheet" href="css/2-grid.css">
+    <link rel="stylesheet" href="css/3-tafla.css">
+    <link rel="stylesheet" href="css/4-icomoon.css">
+    <link rel="stylesheet" href="css/5-download.css">    
+    <link rel="stylesheet" href="css/6-topmenu.css">
+    <link rel="stylesheet" href="css/7-custom.css">
+    <link rel="stylesheet" href="css/8-splash.css">
+    <!--Allar stílsíðurnar eru síðan þjappaðar í eina stílsíðu í verkefni 4 -->
+    <!--link rel="stylesheet" href="css/styles.css"-->
+
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body id="top">
+  <div class="intro welcome">
+  <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+  <nav class="topnav">
+    <input type="checkbox" id="toggle" class="menuInput">
+    <label for="toggle" class="menuLabel">&#9776;</label>
+    <ul class="topmenu">
+      <li><a href="#"><span class="icon-home"></span> Home</a></li>
+      <li><a href="sida2.html"><span class="icon-dice"></span> About</a></li>
+      <li><a href="#"><span class="icon-html-five"></span> Services</a></li>
+      <li><a href="#"><span class="icon-bubbles"></span> Contact</a></li>
+    </ul>
+  </nav>
+  <header class="container" id="top">
+    <section class="landing">
+      <div class="center">
+        <!--img src="images/rwd-logo.svg"-->
+        <span class="icon-rwd-logo logo"></span>
+        <h1>Stop coding non-structured web sites. Let's do it right. </h1>
+        <a class="button button-primary" href="http://vefhonnun.github.io"><span class="icon-pacman"></span> Do it yourself</a>
+      </div>
+      <div>
+        <img src="images/mobile.png" title="Iphone" class="phone">
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="bg-green">
+      <div class="container col-3">
+        <div class="value">
+          <h1>67%</h1>
+          <h3>Purchase Increase</h3>
+          <p>Percentage of users more likely to purchase<br> on mobile friendly site.</p>
+        </div>
+        <div class="value">
+          <h1>90%</h1>
+          <h3>Multi-device Users</h3>
+          <p>Most of the world accesses the internet<br> on multiple devices.</p>
+        </div>
+        <div class="value">
+          <h1>66%</h1>
+          <h3>Sad Users</h3>
+          <p>Percentage of users that are frustrated<br> with page load times.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container col-2">
+      <div>
+        <h1>Fyrirsögn <span class="icon-android"></span></h1>
+        <h4>Áherslutexti H4. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere esse quae tempore dolore dicta laborum reprehenderit odit odio tempora. Hic voluptate non modi voluptatibus atque facere in fuga consequatur iure.</h4>
+        <h2>Undirfyrirsögn H2</h2>
+        <p>Málsgrein P. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsam perspiciatis doloremque natus debitis non nam! Voluptas numquam illo ipsa eveniet quo nostrum, est maxime iusto non deserunt, doloribus facere?</p>
+        <blockquote>"<strong>Blockqoute.</strong> Doloribus, ipsam perspiciatis doloremque natus debitis non nam! Voluptas numquam illo ipsa eveniet quo nostrum"</blockquote>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsam perspiciatis doloremque natus debitis non nam! Voluptas numquam illo ipsa eveniet quo nostrum, est maxime iusto non deserunt, doloribus facere?</p>
+      </div>
+      <div>
+        <img src="images/placeholder.png">
+        <h3>Millifyrirsögn H3</h3>
+        <h5>Undirtexti H5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolores reiciendis, repellendus esse beatae nam nostrum enim aspernatur quam eos ipsa assumenda corrupti quaerat ut iste veniam iure recusandae mollitia?</h5>
+        <ul class="download">
+          <li><a href="#.pdf"> PDF Document &#xeadf;</a></li>
+          <li><a href="#.doc"> Word Document</a></li>
+          <li><a href="#.jpg"> Image File</a></li>
+          <li><a href="#.mp3"> Audio File</a></li>
+          <li><a href="#.mp4"> Video File</a></li>
+        </ul>
+        <h6>H6. Smáa letrið sem verður að vera en helst ekki lesa, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad quos quaerat alias praesentium laboriosam! Nihil nobis accusamus quod quidem aspernatur beatae quam, vel facere exercitationem tenetur repellendus sapiente vitae alias?</h6>
+      </div>
+    </section>
+    <section class="container">
+      <table>
+        <caption>Dagskrá</caption>
+        <thead>
+            <tr>
+                <th scope="col">WHO</th>
+                <th scope="col">WHERE</th>
+                <th scope="col">WHEN</th>
+                <th scope="col">CHECK</th>
+            </tr>
+            <!-- The scope attribute specifies whether a header cell is a header for a column, row, or group of columns or rows.
+            Note: The scope attribute has no visual effect in ordinary web browsers, but can be used by screen readers. -->
+        </thead>
+      <!--tfoot>
+          <tr>
+            <td colspan="5">Table footer. Neðanmáls upplýsingar</td>
+          </tr>
+        </tfoot-->
+        <tbody>
+            <tr>
+                <td scope="row" data-label="WHO">Jónsi</td>
+                <td data-label="WHERE">Norðurljósasalur</td>
+                <td data-label="WHEN">KL. 13:30</td>
+                <td data-label="ORDER"><button class="button-primary">Check in</button></td>
+            </tr>
+            <tr>
+                <td scope="row" data-label="WHO">Nína Björk</td>
+                <td data-label="WHERE">Eldborg</td>
+                <td data-label="WHEN">12:00</td>
+                <td data-label="ORDER"><button>Check in</button></td>
+            </tr>
+            <tr>
+                <td scope="row" data-label="WHO">Stuðmenn</td>
+                <td data-label="WHERE">Bílakjallarinm</td>
+                <td data-label="WHEN">09:00</td>
+                <td data-label="ORDER"><button>Check in</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section class="bgimage" id="contact-us">
+      <div class="container">
+        <h2>Contact us</h2>
+        <div class="col-2">
+          <section>
+            <figure>
+              <img src="images/placeholder.png">
+            </figure>
+            <div>
+              <h2>Login</h2> <!-- Login form -->
+              <form action="" method="get" class="login">
+                <div>
+                  <label for="user">User: </label>
+                  <input type="text" user="user" id="user" 
+                  required placeholder="Notendanafn">
+                </div>
+                <div>
+                  <label for="password">Password: </label>
+                  <input type="password" user="password" id="password" 
+                  required placeholder="Lykilorð">
+                </div>
+                <p>
+                  <input type="submit" value="Login" class="button-primary">
+                </p>
+              </form>
+            </div>
+          </section>
+          <!-- Register Form section -->
+          <form action="" method="get" class="register">
+            <div>
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" 
+              required placeholder="Nafn">
+            </div>
+            <div>
+              <label for="address">Address: </label>
+              <input type="text" name="address" id="address" 
+              required placeholder="Heimilisfang">
+            </div>
+            <div>
+              <label for="phone">Telephone: </label>
+              <input type="tel" 
+              name="phone" 
+              id="phone" 
+              required 
+              placeholder="Sími" 
+              pattern="\d{3}(?:[\-\s]?)\d{4}"
+              title="Vinsamlegast skráið aðeins 7 tölustafi">
+            </div>
+            <div>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" 
+              required placeholder="Tölvupóstur">
+            </div>
+            <h4>Gender / Kyn</h4>
+            <div>
+              <label for="male">Male / KK: </label>
+              <input type="radio" name="gender" id="gender" value="Male">
+              <label for="female">Female / KVK: </label>
+              <input type="radio" name="gender" id="gender2" value="Female">
+              <label for="female">Other / XK: </label>
+              <input type="radio" name="gender" id="gender3" value="Xmale">
+            </div>
+            <div>
+              <p>Veldu allt eða ekkert: 
+              <label for="mood">val 1 </label>
+              <input type="checkbox" name="val" value="Vara_1">
+              <label for="val">val 2 </label>
+              <input type="checkbox" name="val" value="Vara_2" checked>
+              <label for="val">val 3 </label>
+              <input type="checkbox" name="val" value="Vara_3"></p>
+            </div>
+            <div class="col-2">
+              <label for="quantity">Quantity (between 10 and 50):</label>
+              <input type="number" id="quantity" name="quantity" min="10" max="50">
+            </div>
+            <div class="col-2">
+              <label for="cars">Choose a car:</label>
+              <select id="cars" name="car">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            <div class="col-2">              
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="col-2">
+              <label for="appt">Select a time:</label>
+              <input type="time" id="appt" name="appt">
+            </div>
+            <div>
+              <label for="homepage">Add your homepage:</label>
+              <input type="url" id="homepage" name="homepage" placeholder="Http:// eða Https://" title="Https (url) verður að fylgja með" required>
+            </div>
+            <div>
+              <textarea placeholder="Write something here ..."></textarea> 
+            </div>
+            <div>
+              <input type="submit" value="Subscribe!">
+            </div>
+          </form>
+        </div>
+      </div> <!--Form Register section ends -->
+      <div class="container">
+        <p>Basic RWD design is the best resolution.</p>
+        <div class="col-3">
+          <figure>
+            <img src="images/placeholder.png">
+          </figure>
+          <figure>
+            <img src="images/placeholder.png">
+          </figure>
+          <figure>
+            <img src="images/placeholder.png">
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="bg-footer">
+    <footer class="container col-3 foot">
+      <ul>
+        <li><a href="#"><span class="icon-rwd-logo"></span> Lorem ipsum dolor sit amet</a></li>
+        <li><a href="#"><span class="icon-rwd-logo"></span> Sequi unde consequatur</a></li>
+        <li><a href="#"><span class="icon-rwd-logo"></span> Voluptatem velit recusandae</a></li>
+        <li><a href="#"><span class="icon-rwd-logo"></span> Explicabo praesentium ad!</a></li>
+      </ul>
+      <ul>
+        <li><a href="#"><span class="icon-facebook2"></span> Facebook GJG</a></li>
+        <li><a href="#"><span class="icon-github"></span> Github GJG</a></li>
+        <li><a href="#"><span class="icon-soundcloud2"></span>  Soundcloud GJG</a></li>
+        <li><a href="#"><span class="icon-linkedin"></span>  Instagram GJG</a></li>
+      </ul>
+      <dl>
+        <dt>Guðmundur Jón Guðjónsson</dt>
+          <dd>kennari</dd>
+        <dt>Upplýsingatækniskólinn</dt>
+          <dd>Tölvubraut</dd>
+        <dt>Tölvupóstur</dt>
+          <dd>gjg(a)tskoli.is</dd>
+      </dl>
+    </footer>
+  </div>
+  <p class="centre"><a href=#top class="button">Efst á síðu</a></p>
+</div><!--splash intro end-->
+</body>
+</html>
